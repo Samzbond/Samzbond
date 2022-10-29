@@ -35,18 +35,18 @@ var getScriptPromisify = (src) => {
     async render(value) {
       await getScriptPromisify('https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0/echarts.min.js')
 
-      const chart = echarts.init(this._root, 'dark')
+      const chart = echarts.init(this._root, 'wight')
       const option = {
         series: [{
                 type: 'gauge',
                 center: ["50%", "60%"],
-                startAngle: 200,
-                endAngle: -20,
+                startAngle: 180,
+                endAngle: 0,
                 min: 0,
-                max: 60,
-                splitNumber: 12,
+                max: 100,
+                splitNumber: 10,
                 itemStyle: {
-                    color: '#FFAB91'
+                    color: '#FF0000'
                 },
                 progress: {
                     show: true,
@@ -97,7 +97,7 @@ var getScriptPromisify = (src) => {
                     offsetCenter: [0, '-15%'],
                     fontSize: 60,
                     fontWeight: 'bolder',
-                    formatter: '$ {value}',
+                    formatter: 'Hrs {value}',
                     color: 'auto'
                 },
                 data: [{
