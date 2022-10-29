@@ -35,7 +35,7 @@ var getScriptPromisify = (src) => {
     async render(value) {
       await getScriptPromisify('https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0/echarts.min.js')
 
-      const chart = echarts.init(this._root, 'wight')
+      const chart = echarts.init(this._root, 'light')
       const option = {
         series: [{
                 type: 'gauge',
