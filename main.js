@@ -46,7 +46,7 @@ var getScriptPromisify = (src) => {
                 max: 100,
                 splitNumber: 10,
                 itemStyle: {
-                    color: '#FFFF00'
+                    color: '#FFFFFF'
                 },
                 progress: {
                     show: true,
