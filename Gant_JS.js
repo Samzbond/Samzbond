@@ -37,7 +37,7 @@ var getScriptPromisify = (src) => {
 	    
       var socialMediaPlan = new FusionCharts({
           type: "gantt",
-          renderAt: "chart-container",
+          renderAt: "root",
           width: "750",
           height: "500",
           dataFormat: "json",
