@@ -33,6 +33,7 @@ color: this.color
 }
 set color(newColor) {
 this._shadowRoot.getElementById("styling_color").value = newColor;
+  })();
 }
 get color() {
 return this._shadowRoot.getElementById("styling_color").value;
