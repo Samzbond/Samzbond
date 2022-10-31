@@ -34,9 +34,7 @@ var getScriptPromisify = (src) => {
 
     async render(value) {
       await getScriptPromisify('https://cdn.fusioncharts.com/fusioncharts/3.18.0/fusioncharts.js')
-	  await getScriptPromisify('https://cdn.fusioncharts.com/fusioncharts/3.18.0/fusioncharts.charts.js')
-	  await getScriptPromisify('https://cdn.fusioncharts.com/fusioncharts/3.18.0/themes/fusioncharts.theme.fusion.js')
-	
+	    
       var socialMediaPlan = new FusionCharts({
           type: "gantt",
           renderAt: "chart-container",
