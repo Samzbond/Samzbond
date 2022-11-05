@@ -27,7 +27,7 @@ var getScriptPromisify = (src) => {
       this.draw();
     }
 
-    async draw() {
+    async draw(value) {
       await getScriptPromisify(
         "https://cdn.fusioncharts.com/fusioncharts/3.18.0/fusioncharts.js"
       );
@@ -45,7 +45,7 @@ var getScriptPromisify = (src) => {
           dataSource: {
             chart: {
               dateformat: "mm/dd/yyyy",
-              caption: "Socia Media Optimization",
+              caption: "Social Media Optimization " + value,
               subcaption: "Typical Steps Involved",
               theme: "fusion",
               canvasBorderAlpha: "40",
